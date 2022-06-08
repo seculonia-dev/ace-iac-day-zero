@@ -46,7 +46,7 @@ resource "azurerm_network_security_rule" "http" {
 }
 
 resource "azurerm_network_security_rule" "ssh" {
-  access                      = "Allow"
+  access                      = "Deny"
   direction                   = "Inbound"
   name                        = "ssh"
   priority                    = 110
